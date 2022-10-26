@@ -16,6 +16,7 @@ class Pen {
         return solid;
     }
 
+    //лучше назвать метод write()
     void setWrite() {
         System.out.println("Hello " + getSolid().getColor());
     }
@@ -33,6 +34,7 @@ class Pen {
                     System.out.println("Выберете новый цвет для замены стержня: ");
                     String color = scn.next();
                     getSolid().setColor(color);
+                    //цвет поменяли, а где новый amount? он по прежнему 0?
 
         }
     }
